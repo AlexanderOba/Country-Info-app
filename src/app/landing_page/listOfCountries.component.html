@@ -1,0 +1,26 @@
+<h6 *ngIf="isFetching" class="text-center">Loading please wait...</h6>
+<div class="row" *ngIf="!isFetching && countryList">
+  <div
+    class="col-md-3"
+    *ngFor="let country of (countryList | appFilter : country_name |regionFilter: country_region )"
+    (click)="onSelected(country)"
+  >
+    <div class="country-card">
+      <div class="card-img">
+        <img src="{{ country.flags.png }}" class="cntlistimg-fluid" alt="img" />
+      </div>
+      <div class="detail-wraper">
+        <h6 class="card-country">{{ country.name.common }}</h6>
+        <p class="card-details">
+          Population:<span> {{ country.population }}</span>
+        </p>
+        <p class="card-details">
+          Region:<span> {{ country.region }}</span>
+        </p>
+        <p class="card-details">
+          Capital:<span> {{ country.capital }}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

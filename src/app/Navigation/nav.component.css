@@ -1,0 +1,14 @@
+.navbarwraper{
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 78px;
+    border-bottom: 3px solid rgba(0,0,0,3%);
+}
+.navdiv1{
+    font-weight: 800;
+    font-size: 20px;
+}
+.navdiv2{
+    font-weight: 600;
+    font-size: 15px;
+}

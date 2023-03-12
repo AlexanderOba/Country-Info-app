@@ -1,0 +1,31 @@
+<app-navigation-menu></app-navigation-menu>
+<div class="hmpgcontainer container-fluid">
+  <div class="hmepgbdywrap">
+    <div class="hmpginputwrap">
+      <div class="sercinptdiv">
+        <input
+          type="search"
+          class="searchinput"
+          name="country_name"
+          placeholder="Search for a country.."
+          [(ngModel)]= "country_name"
+        />
+      </div>
+      <div>
+        <div controlId="formBasicEmail1" class="diff23">
+          <select class="form-control hmpginputselect"  name="country_region" [(ngModel)]= "country_region">
+            <option class="selectopt" value="all_countries">All countries</option>
+            <option class="selectopt" value="Africa">Africa</option>
+            <option class="selectopt" value="Europe">Europe</option>
+            <option class="selectopt" value="Asia">Asia</option>
+            <option class="selectopt" value="Americas">Americas</option>
+            <option class="selectopt" value="Oceania">Oceania</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="homepgrow">
+      <app-countries [country_name]="country_name" [country_region]="country_region"></app-countries>
+    </div>
+  </div>
+</div>

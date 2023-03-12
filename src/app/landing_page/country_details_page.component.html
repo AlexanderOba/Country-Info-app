@@ -1,0 +1,63 @@
+<app-navigation-menu></app-navigation-menu>
+<div class="hmpgcontainer container-fluid">
+  <div class="hmepgbdywrap">
+    <div>
+      <a routerLink ="/">
+        <span class="bckbtn">
+          <span>&larr;</span>Back
+        </span>
+      </a>
+    </div>
+    <h6 *ngIf="isFetching" class="text-center">Loading please wait...</h6>
+    <div class="row" *ngFor="let country of countryDets">
+      <div class="col-md-6">
+        <div class="countrydetflag" >
+         <img src={{country.flags.png}} class="img-fluid cntdetflag" alt="image"/> 
+        </div>
+     </div>
+      <div class="col-md-6">
+        <div class="etcol2wrap">
+          <h2 class="contryName"></h2>
+           <div class="contrypgdetailcontn">
+            <div>
+              <p class="card-details">
+                <span class="card-details-span">Native Name:</span>{{country.name.official}}
+              </p>
+              <p class="card-details">
+                <span class="card-details-span">Population:</span> {{country.population}}
+              </p>
+              <p class="card-details">
+                <span class="card-details-span">Region:</span> {{country.region}}
+              </p>
+              <p class="card-details">
+                <span class="card-details-span">Sub Region:</span> {{country.subregion}} 
+              </p>
+              <p class="card-details">
+                <span class="card-details-span"> Capital:</span> {{country.capital}}
+              </p>
+            </div>
+            <div class="contrypgdetailcontndiv2">
+              <p class="card-details">
+                <span class="card-details-span">Top Level Domain:</span> {{country.tld}}
+              </p>
+              <p class="card-details">
+                <span class="card-details-span">Currencies:</span> 
+              </p>
+              <p class="card-details">
+                <span class="card-details-span">Languages:</span> {{country.languages.eng}}  
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="card-details">
+              <div class= "bordercountrieswraper">
+                <div class="bordertitle">Border Countries:</div>
+                <div class="bordercountriesbtn" *ngFor="let item of borders">{{item}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div> 
+    </div>
+  </div>
+</div>

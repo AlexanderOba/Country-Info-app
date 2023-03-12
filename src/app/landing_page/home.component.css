@@ -1,0 +1,133 @@
+.hmpgcontainer{
+    background-color: hsl(0, 0%, 98%);
+}
+.hmepgbdywrap{
+    padding: 35px 62px 500px;
+} 
+.hmpginputwrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.searchinput{
+    border: 1px solid grey;
+    border-radius: 6px;
+    padding: 7px 20px 7px 51px;
+    background-image: url(../../assets/images/Search-icon.png);
+    background-position: 23px;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    height: 60px;
+    width: 25rem;
+    font-size: 1rem;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 7%);
+    outline: none;
+    border: none;
+}
+.hmpginputselect{
+    height: 60px;
+    width: 16rem;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.35rem 0.75rem;
+    border: none;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 7%);
+}
+.countrydetflag{
+    background-color: hsl(0, 0%, 98%);
+    height: 350px;
+}
+.bckbtn{
+    border-radius: 7px;
+    box-shadow:0px 0px 7px rgb(0 0 0 / 31%);
+    padding: 0px 35px;
+    font-size: 15px;
+    background-color: #ffffff;
+    margin-bottom: 40px;
+    display: inline-block;
+    color: #000;
+}
+.bckbtn> span{
+   margin-right: 3px;
+   font-weight: 900;
+   font-size: 26px;
+}
+.contrypgdetailcontn{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+.contryName{
+    font-weight: 800;
+    margin-bottom: 21px;
+    font-size: 23px;
+}
+.contrypgdetailcontndiv2{
+    width: 50%;
+}
+.bordercountriesbtn{
+    border-radius: 2px;
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 16%);
+    padding: 4px 22px;
+    font-size: 14px;
+    background-color: #ffffff;
+    margin-right: 11px;
+    margin-bottom: 11px;
+    display: inline-block;
+}
+.countrydetcol2wrap{
+    padding: 48px 0px 0px 36px;
+}
+.cntdetflag{
+    height: 257px;
+    width: 85%;
+}
+.loadinwraper{
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+.homepgrow{
+    justify-content: center;
+}
+.bordercountrieswraper{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.bordertitle{
+    font-size: 15px;
+    margin-right: 13px;
+    font-weight: 600;
+}
+@media(max-width: 760px){
+.navbarwraper{   
+   padding: 23px 15px;
+   align-items: baseline;
+}
+.hmepgbdywrap{
+    padding: 35px 0px 350px;
+}
+.searchinput {
+    width: 100%;
+    margin-bottom: 22px;
+}
+.sercinptdiv{
+    width: 100%;
+}
+.card-img {
+    height: 212px;
+}
+.bordertitle{
+    font-size: 13px;
+    font-weight: 400px;
+}
+.cntdetflag {
+    width: 100%;
+}
+}
+.card-details-span{
+    font-weight: 600;
+    margin-right: 2px;
+}
