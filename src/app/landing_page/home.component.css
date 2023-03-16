@@ -1,6 +1,3 @@
-.hmpgcontainer{
-    background-color: hsl(0, 0%, 98%);
-}
 .hmepgbdywrap{
     padding: 35px 62px 500px;
 } 
@@ -35,7 +32,6 @@
     box-shadow: 0px 0px 10px rgb(0 0 0 / 7%);
 }
 .countrydetflag{
-    background-color: hsl(0, 0%, 98%);
     height: 350px;
 }
 .bckbtn{
@@ -43,10 +39,8 @@
     box-shadow:0px 0px 7px rgb(0 0 0 / 31%);
     padding: 0px 35px;
     font-size: 15px;
-    background-color: #ffffff;
     margin-bottom: 40px;
     display: inline-block;
-    color: #000;
 }
 .bckbtn> span{
    margin-right: 3px;
@@ -71,7 +65,6 @@
     box-shadow: 0px 0px 8px rgb(0 0 0 / 16%);
     padding: 4px 22px;
     font-size: 14px;
-    background-color: #ffffff;
     margin-right: 11px;
     margin-bottom: 11px;
     display: inline-block;
@@ -101,10 +94,14 @@
     margin-right: 13px;
     font-weight: 600;
 }
+.detail-wraper{
+    padding: 20px 13px 26px 19px;
+    font-family: 'Inter', sans-serif;
+}
 @media(max-width: 760px){
 .navbarwraper{   
    padding: 23px 15px;
-   align-items: baseline;
+   align-items: center;
 }
 .hmepgbdywrap{
     padding: 35px 0px 350px;

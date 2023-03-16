@@ -1,15 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
-a{
-    text-decoration: none;
-    color: #333;
+a {
+  text-decoration: none;
+  color: #333;
 }
-a:hover{
-    color: #333;
-    text-decoration: none;
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+body:not(.dark-mode-preloading) {
+  transition: all 0.2s linear;
+}
+
+body.dark-mode {
+  background-color: #1f2d36;
+  color: #1f2d36;
+}
+body.dark-mode .detail-wraper,
+.bckbtn,
+.bordercountriesbtn{
+  color: #989D9F;
+  background-color: #2b3743;
+}
+body.dark-mode .navbarwraper {
+  color: #989D9F;
+  background-color: #2b3743;
+}
+body.dark-mode .text-center {
+    color: #989D9F;
+  }
+body.dark-mode .contrypgdetailcontn,
+.bordertitle {
+  color: #989D9F;
+}
+body.light-mode .bordertitle {
+  color: #000;
+}
+body.light-mode {
+  background-color: hsl(0, 0%, 98%);
+  color: #2d3436;
+}
+body.light-mode .bckbtn {
+  background-color: hsl(0, 0%, 98%);
+  color: #2d3436;
+}
+body.light-mode .bordercountriesbtn {
+  background-color: hsl(0, 0%, 98%);
+  color: #2d3436;
 }

@@ -1,4 +1,20 @@
 <div class="navbarwraper">
-    <div class="navdiv1">Where in the world?</div>
-    <div class="navdiv2"><i class="fa fa-moon-o" aria-hidden="true"></i> Dark Mode</div>
+  <div class="navdiv1">Where in the world ?</div>
+  <div class="navdiv2">
+    <input
+      id="darkMode"
+      type="checkbox"
+      [checked]="darkMode$ | async"
+      (change)="onToggle()"
+      class="toggle"
+    />
+    <label class="toggle-label" for="darkMode">
+      <span class="sun" aria-hidden="true">
+        <i class="fa fa-sun-o"></i> Light Mode
+      </span>
+      <span class="moon" aria-hidden="true">
+        <i class="fa fa-moon-o"></i> Dark Mode
+      </span>
+    </label>
+  </div>
 </div>
